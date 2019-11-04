@@ -1,0 +1,21 @@
+<h1>Stupid Coaching</h1>
+<% question = params[:question] %>
+<% if  question == 'I am going to work' %>
+<%  answer = 'Great!' %>
+<% elsif question[-1] == '?' %>
+<%  answer = 'Silly question, get dressed and go to work!' %>
+<% else %>
+<%  answer = "I don't care, get dressed and go to work!" %>
+<% end %>
+<div class="banner">
+  <p class="bold-message"><%=question%></p>
+  <p>- You</p>
+</div>
+
+<div class="banner yellow">
+  <p class="bold-message"><%=answer%></p>
+  <p>- Your coach</p>
+</div>
+<br>
+<%= link_to "Ask again:", ask_path %>
+<!-- <p>Find me in app/views/questions/answer.html.erb</p> -->

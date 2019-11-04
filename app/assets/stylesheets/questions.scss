@@ -1,0 +1,27 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$yellow: #FFFEE1;
+
+.banner {
+  padding: 10px 30px;
+  margin-top: 30px;
+  // border-left: 5px;
+  background: #DFE1F5;
+  p {
+    font-weight: 30px;
+  }
+}
+
+.yellow {
+  background: $yellow;
+}
+
+.bold-message {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 50px;
+}
+
